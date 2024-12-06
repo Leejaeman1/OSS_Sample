@@ -1,7 +1,7 @@
 import os
 from pydub import AudioSegment
 from pydub.playback import play
-from proc import volumeAdjustment, addReverb, StereoToMono, Panning
+from OSS_Library.proc import volumeAdjustment, addReverb, StereoToMono, Panning
 
 # 입력 및 출력 경로
 INPUT_FILE = "input/sample_audio.wav"  # 오디오 파일 경로
