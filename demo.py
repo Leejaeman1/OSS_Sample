@@ -1,7 +1,5 @@
 import os
-import sys
 from pydub import AudioSegment
-sys.path.append("/path/to/OSS_Library")
 from OSS_Library.proc import volumeAdjustment, addReverb, StereoToMono, Panning
 
 # 입력 및 출력 디렉토리 설정

@@ -1,5 +1,53 @@
 ## OSS_Sample
 
+### 개요
+
+OSS_Sample은 OSS_Library의 기능을 활용하여 오디오 처리 작업을 시연하는 샘플 프로젝트입니다. 
+
+OSS_Library의 주요 오디오 처리 기능을 실행하고 결과를 확인할 수 있습니다.
+
+--
+
+### 설치 방법
+
+#### 1. Python 버전
+
+이 프로젝트는 Python 3.12 에서 동작합니다.
+
+#### 2. FFmpeg 설치
+
+FFmpeg가 시스템에 설치되어 있어야 합니다:
+- Ubuntu/Debian: `sudo apt install ffmpeg`
+- Windows: [FFmpeg 설치 가이드](https://ffmpeg.org/download.html)
+
+### 입력 파일:
+
+   - 입력 파일은 WAV 형식이며, `OSS_Sample/input/sample_audio.wav` 경로에 위치해야 합니다.
+
+### 결과 확인
+
+   - 처리된 파일은 `OSS_Sample/output/` 디렉토리에 저장됩니다.
+   
+#### 출력 파일 설명
+
+| 파일 이름              | 효과 적용                      | 설명                            
+|-----------------------|------------------------------|----------------------------------
+| `volume_adjusted.wav` | 볼륨 조절                    | 볼륨이 조정된 오디오 파일.          
+| `reverb_audio.wav`    | 리버브 추가                  | 울림 효과가 추가된 오디오 파일.      
+| `mono_audio.wav`      | 스테레오 → 모노 변환         | 모노로 변환된 오디오 파일.           
+| `panned_audio.wav`    | 팬닝 효과 적용               | 좌/우 팬닝 효과가 적용된 오디오 파일.
+
+### 디렉토리 구조
+
+### 테스트 코드
+
+ - `OSS_Sample/test/test_sample.py`에 구현
+
+ - python -m unittest discover -s test
+
+--------------------------------------------------------------------
+### 개발할 때
+
 ### 디렉토리는 재량껏 수정
 
 #### 1. branch 규칙
