@@ -20,6 +20,26 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
 - Ubuntu/Debian: `sudo apt install ffmpeg`
 - Windows: [FFmpeg 설치 가이드](https://ffmpeg.org/download.html)
 
+### 테스트 코드
+
+ - `OSS_Sample/test/test_sample.py`에 구현
+
+ - python -m unittest discover -s test
+
+### 디렉토리 구조
+
+OSS_Sample/
+├── OSS_Sample/          # 샘플 코드
+│   ├── __init__.py
+│   └── demo.py          # 샘플 코드
+├── input/               # 입력 파일
+│   └── sample_audio.wav
+├── output/
+├── .gitignore           #  # 빌드 파일 (dist/) 등을 불필요한 파일이 git 저장소에서 제외되도록 함
+├── setup.py             # 패키지 설정 파일
+├── README.md            # 샘플 코드 설명 파일
+└── MANIFEST.in          # 추가 파일 포함 설정
+
 ### 입력 파일:
 
    - 입력 파일은 WAV 형식이며, `OSS_Sample/input/sample_audio.wav` 경로에 위치해야 합니다.
@@ -27,7 +47,7 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
 ### 결과 확인
 
    - 처리된 파일은 `OSS_Sample/output/` 디렉토리에 저장됩니다.
-   
+
 #### 출력 파일 설명
 
 | 파일 이름              | 효과 적용                      | 설명                            
@@ -36,14 +56,6 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
 | `reverb_audio.wav`    | 리버브 추가                  | 울림 효과가 추가된 오디오 파일.      
 | `mono_audio.wav`      | 스테레오 → 모노 변환         | 모노로 변환된 오디오 파일.           
 | `panned_audio.wav`    | 팬닝 효과 적용               | 좌/우 팬닝 효과가 적용된 오디오 파일.
-
-### 디렉토리 구조
-
-### 테스트 코드
-
- - `OSS_Sample/test/test_sample.py`에 구현
-
- - python -m unittest discover -s test
 
 --------------------------------------------------------------------
 ### 개발할 때
