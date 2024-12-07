@@ -1,0 +1,5 @@
+# README 파일 포함
+include README.md
+
+# 입력 파일 포함
+include input/sample_audio.wav
