@@ -20,11 +20,14 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
 - Ubuntu/Debian: `sudo apt install ffmpeg`
 - Windows: [FFmpeg 설치 가이드](https://ffmpeg.org/download.html)
 
-### 테스트 코드
+### 테스트 
 
- - `OSS_Sample/test/test_sample.py`에 구현
+ - 개발 중간 Library_Initial_Package 브랜치에서 패키지화된 라이브러리를 로컬에 다운받아 테스트.
 
- - python -m unittest discover -s test
+ - python setup.py sdist
+
+ - OSS_Sample에 들어가서
+ - pip install dist/OSS_Library-0.0.1.tar.gz
 
 ### 디렉토리 구조
 
