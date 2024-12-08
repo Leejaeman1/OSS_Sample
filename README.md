@@ -29,6 +29,10 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
  - OSS_Sample에 들어가서
  - pip install dist/OSS_Library-0.0.1.tar.gz
 
+### 실행 방법
+ - OSS_Sample에 들어가서
+ - oss-sample
+ - 
 ### 디렉토리 구조
 
 OSS_Sample/
