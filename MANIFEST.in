@@ -1,5 +1,5 @@
-# README 파일 포함
-include README.md
+include README.rst
 
-# 입력 파일 포함
+include LICENSE
+
 include input/sample_audio.wav
