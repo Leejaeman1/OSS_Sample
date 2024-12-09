@@ -29,15 +29,25 @@ FFmpeg가 시스템에 설치되어 있어야 합니다:
 ### 디렉토리 구조
 
 OSS_Sample/
+
 ├── OSS_Sample/          # 샘플 코드
+
 │   ├── __init__.py
+
 │   └── demo.py          # 샘플 코드
+
 ├── input/               # 입력 파일
+
 │   └── sample_audio.wav
+
 ├── output/
+
 ├── .gitignore           #  # 빌드 파일 (dist/) 등을 불필요한 파일이 git 저장소에서 제외되도록 함
+
 ├── setup.py             # 패키지 설정 파일
+
 ├── README.md            # 샘플 코드 설명 파일
+
 └── MANIFEST.in          # 추가 파일 포함 설정
 
 ### 입력 파일:
@@ -47,6 +57,12 @@ OSS_Sample/
 ### 결과 확인
 
    - 처리된 파일은 `OSS_Sample/output/` 디렉토리에 저장됩니다.
+
+### 주요 함수
+
+process_audio(input_file, output_dir="output")
+입력된 오디오 파일에 다양한 음향 효과(팬, 리버브, 볼륨 조정, 모노 변환)를 적용한 뒤, 
+결과를 지정된 디렉터리에 저장
 
 #### 출력 파일 설명
 
